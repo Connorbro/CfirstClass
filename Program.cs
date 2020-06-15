@@ -9,26 +9,13 @@ namespace introduction
     class Mathematics
     {
         // Encapsulation
-        public int Addition(int numberOne, int numberTwo) //Capitalised Methods are best!
-        {
-            return numberOne + numberTwo;
-        }
+        
 
-        public int Subtraction(int numberOne, int numberTwo)
+        public double Subtraction(double numberOne, double numberTwo)
         {
             return numberOne - numberTwo;
         }
-        public double Division(double numberOne, double numberTwo)
-        {
-            return numberOne / numberTwo;
-        }
-        public int Multiplication(int numberOne, int numberTwo)
-        {
-            return numberOne * numberTwo;
-        }
     }
-
-
 
 
     class Program
@@ -36,13 +23,15 @@ namespace introduction
         static void Main(string[] args)
         {
             Mathematics maths = new Mathematics();
-            int subtractPlease = maths.Subtraction(200, 32);
-            int addMePlease = maths.Addition(10, 40);
-            int multiplyMePlease = maths.Multiplication(22, 3);
-            double divideMePlease = maths.Division(33, 2.2);
+            AgeCalculator checkAge = new AgeCalculator();
+            checkAge.Calculator(21);
+
+            double subtractPlease = maths.Subtraction(200, 32);
+            
             
             Console.WriteLine(subtractPlease);
-            Console.WriteLine(divideMePlease);
+
+
         }
     }
 }
