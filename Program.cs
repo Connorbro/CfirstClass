@@ -12,15 +12,19 @@ namespace introduction
         static void Main(string[] args)
         {
             Mathematics maths = new Mathematics();
-
+            Encapsulation example = new Encapsulation();
             AgeCalculator checkAge = new AgeCalculator();
-            Console.Write("Please enter your age for an ID check at our club: ");
-
-            string userInput = Console.ReadLine();
-            checkAge.Calculator(Convert.ToInt32(userInput));
-
-            double subtractPlease = maths.Subtraction(200, 32);
             
+            example.information();
+            example.favGame = "Call of duty";
+            Console.WriteLine($"My favourite game is {example.favGame}");
+            
+            //Console.Write("Please enter your age for an ID check at our club: ");
+
+            // string userInput = Console.ReadLine();
+            //checkAge.Calculator(Convert.ToInt32(userInput));
+
+            //double subtractPlease = maths.Subtraction(200, 32);
             
             //Console.WriteLine(subtractPlease);
 
