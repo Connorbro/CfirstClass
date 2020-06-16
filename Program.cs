@@ -6,18 +6,7 @@ namespace introduction
 // Any class inside of the namespace will be available...
 
 {
-    class Mathematics
-    {
-        // Encapsulation
-        
-
-        public double Subtraction(double numberOne, double numberTwo)
-        {
-            return numberOne - numberTwo;
-        }
-    }
-
-
+    
     class Program
     {
         static void Main(string[] args)
