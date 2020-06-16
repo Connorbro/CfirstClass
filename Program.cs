@@ -23,13 +23,17 @@ namespace introduction
         static void Main(string[] args)
         {
             Mathematics maths = new Mathematics();
+
             AgeCalculator checkAge = new AgeCalculator();
-            checkAge.Calculator(21);
+            Console.Write("Please enter your age for an ID check at our club: ");
+
+            string userInput = Console.ReadLine();
+            checkAge.Calculator(Convert.ToInt32(userInput));
 
             double subtractPlease = maths.Subtraction(200, 32);
             
             
-            Console.WriteLine(subtractPlease);
+            //Console.WriteLine(subtractPlease);
 
 
         }
